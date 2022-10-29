@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\User;
+use Illuminate\Http\Request;
 
 class TestController extends Controller
 {
@@ -15,8 +15,9 @@ class TestController extends Controller
     public function index()
     {
         echo('hello');
-    //    $data = User::all();
-    //    return response()->json($data); 
+        echo('</br>');
+       $data = User::all();
+       echo($data[0]->name); 
     }
 
     /**
