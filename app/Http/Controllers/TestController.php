@@ -14,8 +14,9 @@ class TestController extends Controller
      */
     public function index()
     {
-       $data = User::all();
-       return response()->json($data); 
+        echo('hello');
+    //    $data = User::all();
+    //    return response()->json($data); 
     }
 
     /**
